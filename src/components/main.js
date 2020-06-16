@@ -41,7 +41,7 @@ const Main = () => (
                     Godfrey Best
                   </h2>
                   <p class="wow fadeInUp" data-wow-delay="0.8s">
-                    Web Developer
+                    Software Engineer
                   </p>
                   <a
                     class="home-btn smoth-scroll wow fadeInUp"
