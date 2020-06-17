@@ -13,6 +13,7 @@ const SendButton = () => (
 
 const Form = () => {
     const [status, setStatus] = useState('');
+    const [formData, setFormData] = useState({})
 
     // const submitForm = ev => {
     //     ev.preventDefault();
@@ -33,6 +34,28 @@ const Form = () => {
     //     xhr.send(data);
     // }
 
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+      }    
+
+    const handleChange = e => setFormData({ [e.target.name]: e.target.value });
+
+
+    const handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...formData })
+        })
+            .then(() => setStatus("SUCCESS"))
+            .catch(error => setStatus("ERROR"));
+
+        e.preventDefault();
+    };
+
+
     return (
         <form
             id="contactForm"
@@ -40,17 +63,18 @@ const Form = () => {
             data-toggle="validator"
             data-netlify="true"
             name="contact"
-        // onSubmit={submitForm}
+            onSubmit={handleSubmit}
         // action="https://formspree.io/moqklawn"
         // method="POST"
         >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact" aria-label="contact" />
 
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group wow fadeInUp" data-wow-delay="0.2s">
                         <div class="controls">
                             <input
+                                onChange={handleChange}
                                 type="text"
                                 id="name"
                                 class="form-control"
@@ -67,6 +91,7 @@ const Form = () => {
                     <div class="form-group wow fadeInUp" data-wow-delay="0.2s">
                         <div class="controls">
                             <input
+                                onChange={handleChange}
                                 type="email"
                                 name="email"
                                 class="email form-control"
@@ -87,6 +112,7 @@ const Form = () => {
                     <div class="form-group wow fadeInUp" data-wow-delay="0.4s">
                         <div class="controls">
                             <input
+                                onChange={handleChange}
                                 type="text"
                                 id="msg_subject"
                                 class="form-control"
