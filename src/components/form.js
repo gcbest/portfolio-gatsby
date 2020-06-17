@@ -4,10 +4,10 @@ const SendButton = () => (
     <button
         type="submit"
         id="submit"
-        class="btn btn-effect wow fadeInUp"
+        className="btn btn-effect wow fadeInUp"
         data-wow-delay="0.8s"
     >
-        <i class="fa fa-check" /> Send Message
+        <i className="fa fa-check" /> Send Message
     </button>
 )
 
@@ -40,7 +40,7 @@ const Form = () => {
             .join("&");
       }    
 
-    const handleChange = e => setFormData({ [e.target.name]: e.target.value });
+    const handleChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
 
 
     const handleSubmit = e => {
@@ -59,7 +59,7 @@ const Form = () => {
     return (
         <form
             id="contactForm"
-            class="contact-form shake"
+            className="contact-form shake"
             data-toggle="validator"
             data-netlify="true"
             name="contact"
@@ -69,94 +69,97 @@ const Form = () => {
         >
             <input type="hidden" name="form-name" value="contact" aria-label="contact" />
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="controls">
+            <div className="row">
+                <div className="col-md-6">
+                    <div className="form-group wow fadeInUp" data-wow-delay="0.2s">
+                        <div className="controls">
                             <input
                                 onChange={handleChange}
                                 type="text"
                                 id="name"
-                                class="form-control"
+                                className="form-control"
                                 placeholder="Name"
                                 required
+                                name="name"
                                 aria-label="name"
                                 data-error="Please enter your name"
                             />
-                            <div class="help-block with-errors" />
+                            <div className="help-block with-errors" />
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="form-group wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="controls">
+                <div className="col-md-6">
+                    <div className="form-group wow fadeInUp" data-wow-delay="0.2s">
+                        <div className="controls">
                             <input
                                 onChange={handleChange}
                                 type="email"
                                 name="email"
-                                class="email form-control"
+                                className="email form-control"
                                 id="email"
                                 placeholder="Email"
                                 required
                                 aria-label="email"
                                 data-error="Please enter your email"
                             />
-                            <div class="help-block with-errors" />
+                            <div className="help-block with-errors" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="controls">
+            <div className="row">
+                <div className="col-md-12">
+                    <div className="form-group wow fadeInUp" data-wow-delay="0.4s">
+                        <div className="controls">
                             <input
                                 onChange={handleChange}
                                 type="text"
                                 id="msg_subject"
-                                class="form-control"
+                                className="form-control"
                                 placeholder="Subject"
                                 required
+                                name="subject"
                                 aria-label="subject"
                                 data-error="Please enter your message subject"
                             />
-                            <div class="help-block with-errors" />
+                            <div className="help-block with-errors" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="controls">
+            <div className="row">
+                <div className="col-md-12">
+                    <div className="form-group wow fadeInUp" data-wow-delay="0.6s">
+                        <div className="controls">
                             <textarea
+                                onChange={handleChange}
                                 id="message"
                                 name="message"
                                 rows="7"
                                 placeholder="Message"
-                                class="form-control"
+                                className="form-control"
                                 required
                                 aria-label="message"
                                 data-error="Write your message"
                             />
-                            <div class="help-block with-errors" />
+                            <div className="help-block with-errors" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
+            <div className="row">
+                <div className="col-md-12">
                     {status === "SUCCESS" ? <p>Thanks!</p> : <SendButton />}
                     {status === "ERROR" && <p>Ooops! There was an error.</p>}
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="msgSubmit" class="h3 text-center hidden" />
-                    <div class="clearfix" />
+            <div className="row">
+                <div className="col-md-12">
+                    <div id="msgSubmit" className="h3 text-center hidden" />
+                    <div className="clearfix" />
                 </div>
             </div>
         </form>

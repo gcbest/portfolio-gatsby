@@ -15,43 +15,43 @@ const Navmenu = () => {
       }
 
       return (
-        <div class="mainmenu">
-        <div class="navbar navbar-nobg">
-          <div class="navbar-header">
+        <div className="mainmenu">
+        <div className="navbar navbar-nobg">
+          <div className="navbar-header">
             <button
               type="button"
-              class="navbar-toggle"
+              className="navbar-toggle"
               data-toggle="collapse"
               data-target=".navbar-collapse"
             >
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar" />
-              <span class="icon-bar" />
-              <span class="icon-bar" />
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+              <span className="icon-bar" />
             </button>
           </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active">
-                <a class="smoth-scroll" href="#home">
+          <div className="navbar-collapse collapse">
+            <ul className="nav navbar-nav navbar-right">
+              <li className="active">
+                <a className="smoth-scroll" href="#home">
                   Home
-                  <div class="ripple-wrapper" />
+                  <div className="ripple-wrapper" />
                 </a>
               </li>
     
               <li>
-                <a class="smoth-scroll" href="#about">
+                <a className="smoth-scroll" href="#about">
                   About
                 </a>
               </li>
               <li>
-                <a class="smoth-scroll" href="#service">
+                <a className="smoth-scroll" href="#service">
                   Services
                 </a>
               </li>
-              {/* <li><a class="smoth-scroll" href="#work">Work</a></li>  */}
+              {/* <li><a className="smoth-scroll" href="#work">Work</a></li>  */}
               <li>
-                <a class="smoth-scroll" href="#contact">
+                <a className="smoth-scroll" href="#contact">
                   Contact
                 </a>
               </li>
