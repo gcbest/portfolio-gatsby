@@ -39,10 +39,13 @@ const Form = () => {
             class="contact-form shake"
             data-toggle="validator"
             data-netlify="true"
-            // onSubmit={submitForm}
-            // action="https://formspree.io/moqklawn"
-            // method="POST"
+            name="contact"
+        // onSubmit={submitForm}
+        // action="https://formspree.io/moqklawn"
+        // method="POST"
         >
+            <input type="hidden" name="form-name" value="contact" />
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group wow fadeInUp" data-wow-delay="0.2s">
@@ -119,7 +122,7 @@ const Form = () => {
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    {status === "SUCCESS" ? <p>Thanks!</p> : <SendButton/>}
+                    {status === "SUCCESS" ? <p>Thanks!</p> : <SendButton />}
                     {status === "ERROR" && <p>Ooops! There was an error.</p>}
                 </div>
             </div>
