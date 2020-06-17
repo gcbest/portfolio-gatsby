@@ -12,36 +12,25 @@ const SendButton = () => (
 )
 
 const Form = () => {
+    const initialFormData = {
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+    }
     const [status, setStatus] = useState('');
-    const [formData, setFormData] = useState({})
-
-    // const submitForm = ev => {
-    //     ev.preventDefault();
-    //     const form = ev.target;
-    //     const data = new FormData(form);
-    //     const xhr = new XMLHttpRequest();
-    //     xhr.open(form.method, form.action);
-    //     xhr.setRequestHeader("Accept", "application/json");
-    //     xhr.onreadystatechange = () => {
-    //         if (xhr.readyState !== XMLHttpRequest.DONE) return;
-    //         if (xhr.status === 200) {
-    //             form.reset();
-    //             setStatus("SUCCESS");
-    //         } else {
-    //             setStatus("ERROR");
-    //         }
-    //     };
-    //     xhr.send(data);
-    // }
+    const [formData, setFormData] = useState(initialFormData);
+    const { name, email, subject, message } = formData;
 
     const encode = (data) => {
         return Object.keys(data)
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
-      }    
+    }
 
     const handleChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
 
+    const clearForms = () => setFormData(initialFormData);
 
     const handleSubmit = e => {
         fetch("/", {
@@ -49,12 +38,14 @@ const Form = () => {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...formData })
         })
-            .then(() => setStatus("SUCCESS"))
+            .then(() => {
+                setStatus("SUCCESS");
+                clearForms();
+            })
             .catch(error => setStatus("ERROR"));
 
         e.preventDefault();
     };
-
 
     return (
         <form
@@ -64,8 +55,6 @@ const Form = () => {
             data-netlify="true"
             name="contact"
             onSubmit={handleSubmit}
-        // action="https://formspree.io/moqklawn"
-        // method="POST"
         >
             <input type="hidden" name="form-name" value="contact" aria-label="contact" />
 
@@ -81,6 +70,7 @@ const Form = () => {
                                 placeholder="Name"
                                 required
                                 name="name"
+                                value={name}
                                 aria-label="name"
                                 data-error="Please enter your name"
                             />
@@ -94,11 +84,12 @@ const Form = () => {
                             <input
                                 onChange={handleChange}
                                 type="email"
-                                name="email"
                                 className="email form-control"
                                 id="email"
                                 placeholder="Email"
                                 required
+                                name="email"
+                                value={email}
                                 aria-label="email"
                                 data-error="Please enter your email"
                             />
@@ -120,6 +111,7 @@ const Form = () => {
                                 placeholder="Subject"
                                 required
                                 name="subject"
+                                value={subject}
                                 aria-label="subject"
                                 data-error="Please enter your message subject"
                             />
@@ -137,6 +129,7 @@ const Form = () => {
                                 onChange={handleChange}
                                 id="message"
                                 name="message"
+                                value={message}
                                 rows="7"
                                 placeholder="Message"
                                 className="form-control"
