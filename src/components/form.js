@@ -25,31 +25,13 @@ const Form = () => {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 200) {
                 form.reset();
-                this.setStatus("SUCCESS");
+                setStatus("SUCCESS");
             } else {
-                this.setStatus("ERROR");
+                setStatus("ERROR");
             }
         };
         xhr.send(data);
     }
-
-    // return (
-    //     <form
-    //         onSubmit={submitForm}
-    //         action="https://formspree.io/moqklawn"
-    //         method="POST"
-    //     >
-    //         <!-- add your custom form HTML here -->
-
-
-    //         <label>Email:</label>
-    //         <input type="email" name="email" />
-    //         <label>Message:</label>
-    //         <input type="text" name="message" />
-    //         {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-    //         {status === "ERROR" && <p>Ooops! There was an error.</p>}
-    //     </form>
-    // );
 
     return (
         <form
@@ -70,6 +52,7 @@ const Form = () => {
                                 class="form-control"
                                 placeholder="Name"
                                 required
+                                aria-label="name"
                                 data-error="Please enter your name"
                             />
                             <div class="help-block with-errors" />
@@ -86,6 +69,7 @@ const Form = () => {
                                 id="email"
                                 placeholder="Email"
                                 required
+                                aria-label="email"
                                 data-error="Please enter your email"
                             />
                             <div class="help-block with-errors" />
@@ -104,6 +88,7 @@ const Form = () => {
                                 class="form-control"
                                 placeholder="Subject"
                                 required
+                                aria-label="subject"
                                 data-error="Please enter your message subject"
                             />
                             <div class="help-block with-errors" />
@@ -123,6 +108,7 @@ const Form = () => {
                                 placeholder="Message"
                                 class="form-control"
                                 required
+                                aria-label="message"
                                 data-error="Write your message"
                             />
                             <div class="help-block with-errors" />
