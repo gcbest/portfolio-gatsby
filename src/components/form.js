@@ -14,33 +14,34 @@ const SendButton = () => (
 const Form = () => {
     const [status, setStatus] = useState('');
 
-    const submitForm = ev => {
-        ev.preventDefault();
-        const form = ev.target;
-        const data = new FormData(form);
-        const xhr = new XMLHttpRequest();
-        xhr.open(form.method, form.action);
-        xhr.setRequestHeader("Accept", "application/json");
-        xhr.onreadystatechange = () => {
-            if (xhr.readyState !== XMLHttpRequest.DONE) return;
-            if (xhr.status === 200) {
-                form.reset();
-                setStatus("SUCCESS");
-            } else {
-                setStatus("ERROR");
-            }
-        };
-        xhr.send(data);
-    }
+    // const submitForm = ev => {
+    //     ev.preventDefault();
+    //     const form = ev.target;
+    //     const data = new FormData(form);
+    //     const xhr = new XMLHttpRequest();
+    //     xhr.open(form.method, form.action);
+    //     xhr.setRequestHeader("Accept", "application/json");
+    //     xhr.onreadystatechange = () => {
+    //         if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    //         if (xhr.status === 200) {
+    //             form.reset();
+    //             setStatus("SUCCESS");
+    //         } else {
+    //             setStatus("ERROR");
+    //         }
+    //     };
+    //     xhr.send(data);
+    // }
 
     return (
         <form
             id="contactForm"
             class="contact-form shake"
             data-toggle="validator"
-            onSubmit={submitForm}
-            action="https://formspree.io/moqklawn"
-            method="POST"
+            data-netlify="true"
+            // onSubmit={submitForm}
+            // action="https://formspree.io/moqklawn"
+            // method="POST"
         >
             <div class="row">
                 <div class="col-md-6">
