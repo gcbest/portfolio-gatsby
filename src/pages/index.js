@@ -6,7 +6,7 @@ import Services from "../components/services"
 import Contact from '../components/contact';
 import Main from '../components/main';
 import Layout from '../components/layout';
-// import Works from "../components/works" // to be added later
+import Works from "../components/works"
 // import Preloader from '../components/preloader';
 
 const IndexPage = () => {
@@ -20,7 +20,7 @@ const IndexPage = () => {
         <Main/>
         <About />
         <Services />
-        {/* <Works/> */}
+        <Works/>
         <Contact/>
       </Layout>
     </div>
