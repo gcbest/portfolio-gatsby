@@ -50,14 +50,14 @@ const About = () => (
                 better themselves.
               </p>
               <p className="wow fadeInUp" data-wow-delay="1.2s">
-                I'm also deeply fascinated by how techonology enables us to
+                I'm also deeply fascinated by how technology enables us to
                 store and transmit vast amounts of information in fractions of a
                 second. I work daily to understand how this process works and to
                 gain the skills needed to add something meaningful to this
                 process.
               </p>
               <p className="wow fadeInUp" data-wow-delay="1.4s">
-                I enjoy most activites which are competitive and repetitive,
+                I enjoy most activities which are competitive and repetitive,
                 which is what drew me to web development. The feeling of
                 iteratively improving at a certain task is something that
                 motivates me in any challenge I undertake.
