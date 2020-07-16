@@ -1,8 +1,13 @@
 import React from 'react'
 
 const Services = () => (
-    <section id="service" className="services-area section-padding">
-    <div className="container">
+  <section id="service" className="services-area section-padding">
+    <div className="container"
+      data-sal="slide-up"
+      data-sal-delay="500"
+      data-sal-duration="1000"
+      data-sal-easing="easeInQuad"
+    >
       <div className="row">
         <div className="col-md-12">
           <div className="section-title">

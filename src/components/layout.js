@@ -6,7 +6,6 @@ import "../bootstrap/css/bootstrap.min.css"
 import "../fonts/font-awesome.min.css"
 
 import "../css/magnific-popup.css"
-import "../css/animate.min.css"
 import "../css/style.css"
 import "../css/responsive.css"
 
