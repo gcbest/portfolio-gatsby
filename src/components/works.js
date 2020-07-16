@@ -1,8 +1,10 @@
 import React from 'react'
+import Card from './card';
 
+const x = new Array(6);
 const Works = () => (
-    <section id="work" classname="work section-padding">
-        <div classname="container">
+    <section className="work" className="work section-padding">
+        {/* <div classname="container">
           <div classname="row">
             <div classname="col-sm-12">
               <div classname="section-title">
@@ -87,7 +89,9 @@ const Works = () => (
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+
       </section>
 )
 
