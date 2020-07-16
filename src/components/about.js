@@ -1,5 +1,5 @@
 import React from "react"
-import myPic from '../images/bg/me.jpg'
+import Image from './image'
 
 const About = () => (
   <section id="about" className="about-area section-padding">
@@ -8,7 +8,7 @@ const About = () => (
         <div className="col-md-4">
           {/* START ABOUT IMAGE AREA  */}
           <div className="about-image wow fadeInUp" data-wow-delay="0.2s">
-            <img src={myPic} alt="" className="img-responsive" />
+            <Image/>
           </div>
           <div
             className="social-links text-center wow fadeIn"
