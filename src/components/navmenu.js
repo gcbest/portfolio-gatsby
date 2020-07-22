@@ -1,10 +1,14 @@
 import React, {useEffect} from 'react'
+import { Link } from "gatsby"
+import Menu from "./menu"
 
 const Navmenu = () => {
     useEffect(() => {
         window.addEventListener("scroll", handleNavChange)
       })
-    
+
+      let childMenu = {}
+
       let handleNavChange = () => {
         let headerTopArea = document.getElementsByClassName("header-top-area")
         if (window.scrollY > 100) {
@@ -13,6 +17,8 @@ const Navmenu = () => {
           headerTopArea[0].classList.remove("menu-bg")
         }
       }
+
+      const toggleMenu = () => childMenu.open()
 
       return (
         <div className="mainmenu">
@@ -23,6 +29,7 @@ const Navmenu = () => {
               className="navbar-toggle"
               data-toggle="collapse"
               data-target="navbar-collapse"
+              onClick={() => toggleMenu()}
             >
               <span className="sr-only">Toggle navigation</span>
               <span className="icon-bar" />
@@ -30,30 +37,31 @@ const Navmenu = () => {
               <span className="icon-bar" />
             </button>
           </div>
+          <Menu ref={el => (childMenu = el)} />
           <div className="navbar-collapse collapse">
             <ul className="nav navbar-nav navbar-right">
               <li className="active">
-                <a className="smoth-scroll" href="#home">
+                <Link className="smoth-scroll" to="/">
                   Home
                   <div className="ripple-wrapper" />
-                </a>
+                </Link>
               </li>
-    
+
               <li>
-                <a className="smoth-scroll" href="#about">
+                <Link className="smoth-scroll" to="#about">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="smoth-scroll" href="#service">
+                <Link className="smoth-scroll" to="#service">
                   Services
-                </a>
+                </Link>
               </li>
-              {/* <li><a className="smoth-scroll" href="#work">Work</a></li>  */}
+              {/* <li><Link className="smoth-scroll" to="#work">Work</Link></li>  */}
               <li>
-                <a className="smoth-scroll" href="#contact">
+                <Link className="smoth-scroll" to="#contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -61,7 +69,5 @@ const Navmenu = () => {
       </div>
     )
 }
-
-
 
 export default Navmenu
