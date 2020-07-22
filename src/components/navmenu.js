@@ -18,9 +18,7 @@ const Navmenu = () => {
         }
       }
 
-      const toggleMenu = () => {
-        childMenu.open()
-      }
+      const toggleMenu = () => childMenu.open()
 
       return (
         <div className="mainmenu">
@@ -39,7 +37,7 @@ const Navmenu = () => {
               <span className="icon-bar" />
             </button>
           </div>
-        <Menu ref={el => (childMenu = el)} />
+          <Menu ref={el => (childMenu = el)} />
           <div className="navbar-collapse collapse">
             <ul className="nav navbar-nav navbar-right">
               <li className="active">

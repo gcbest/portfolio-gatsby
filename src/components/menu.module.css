@@ -24,6 +24,10 @@
   pointer-events: all;
 }
 
+.menu h1:hover {
+  color: #1273e7;
+}
+
 .menu.open {
   visibility: visible;
   opacity: 1;
