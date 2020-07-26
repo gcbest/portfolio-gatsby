@@ -3,7 +3,7 @@ import Card from './card';
 
 const x = new Array(6);
 const Works = () => (
-    <section className="works" id="works" className="work section-padding">
+    <section id="works" className="work section-padding">
       <Card/>
       <Card/>
       <Card/>
