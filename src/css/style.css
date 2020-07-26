@@ -486,9 +486,10 @@ a.home-btn {
 
 .work {
   display: grid;
-  grid-template-areas:
+  /* grid-template-areas:
     "title title title"
-    "card  card  card";
+    "card  card  card"; */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .work-inner .mix {
