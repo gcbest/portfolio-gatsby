@@ -3,7 +3,10 @@ import Card from './card';
 
 const x = new Array(6);
 const Works = () => (
-    <section className="work" className="work section-padding">
+    <section className="works" id="works" className="work section-padding">
+      <Card/>
+      <Card/>
+      <Card/>
         {/* <div classname="container">
           <div classname="row">
             <div classname="col-sm-12">
