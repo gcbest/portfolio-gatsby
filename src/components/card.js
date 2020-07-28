@@ -21,3 +21,5 @@ function Card({ image, alt, description, tags=[] }) {
 }
 
 export default Card;
+
+

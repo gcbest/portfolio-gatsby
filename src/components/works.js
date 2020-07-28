@@ -1,10 +1,12 @@
 import React from 'react'
 import Card from './card'
+import languageTypescript from '@iconify/icons-mdi/language-typescript';
 
-const tags = new Array(6);
+
+const eatItIcons = [{name: 'Typescript', logo: languageTypescript}]
 const Works = () => (
     <section id="works" className="work section-padding">
-      <Card/>
+      <Card tags={eatItIcons}/>
       <Card/>
       <Card/>
         {/* <div classname="container">

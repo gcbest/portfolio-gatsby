@@ -1,7 +1,8 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 
 const Tag = ({name, logo}) => (
-    <figcaption><img src={logo} alt={name}/> {name}</figcaption>
+    <figcaption><Icon icon={logo} /> {name}</figcaption>
 );
 
 export default Tag;
