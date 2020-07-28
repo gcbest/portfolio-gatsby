@@ -1,4 +1,5 @@
 import React from 'react'
+import Tag from './tag'
 
 function Card({ image, alt, description, tags=[] }) {
     // return (
@@ -12,7 +13,9 @@ function Card({ image, alt, description, tags=[] }) {
         <figure className="card">
             <img src='https://hasura.io/blog/content/images/2019/05/Svelte_blog.png' alt='Svelte FTW' />
             <figcaption>Eat It!</figcaption>
-            <figcaption>{tags.length > 0 && tags.map(t => t.name)}</figcaption>
+            {/* tags.length > 0 && tags.map(t => t.name) */}
+            {tags.length > 0 && tags.map(({name, logo}) => <Tag name={name} logo={logo}  /> )}
+            <Tag />
         </figure>
     )
 }

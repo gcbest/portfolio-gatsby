@@ -1,7 +1,7 @@
 import React from 'react'
-import Card from './card';
+import Card from './card'
 
-const x = new Array(6);
+const tags = new Array(6);
 const Works = () => (
     <section id="works" className="work section-padding">
       <Card/>
