@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="row">
         <div className="col-md-12">
           <p className="wow fadeInUp" data-wow-delay="1s">
-            &copy; {new Date().getFullYear()} Godfrey Best | All RightReserved.
+            &copy; {new Date().getFullYear()} Godfrey Best | All Rights Reserved
           </p>
         </div>
       </div>

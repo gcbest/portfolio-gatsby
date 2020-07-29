@@ -13,9 +13,7 @@ const Contact = () => (
       </div>
       <div className="row">
         <div className="col-md-12">
-          {/* Start Contact Form  */}
           <Form/>
-          {/* End Contact Form  */}
         </div>
       </div>
     </div>

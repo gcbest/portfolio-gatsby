@@ -1,3 +1,21 @@
+import languageTypescript from '@iconify/icons-mdi/language-typescript';
+import graphqlIcon from '@iconify/icons-mdi/graphql';
+import reactIcon from '@iconify/icons-mdi/react';
+import postgresqlIcon from '@iconify/icons-simple-icons/postgresql';
+import nodejsIcon from '@iconify/icons-mdi/nodejs';
+import gatsbyIcon from '@iconify/icons-mdi/gatsby';
+import netlifyIcon from '@iconify/icons-simple-icons/netlify';
+import nextjsIcon from '@iconify/icons-logos/nextjs';
+import serverlessIcon from '@iconify/icons-simple-icons/serverless';
+import styledComponentsIcon from '@iconify/icons-simple-icons/styled-components';
+import hasuraIcon from '@iconify/icons-logos/hasura';
+import logoPwa from '@iconify/icons-ion/logo-pwa';
+import tailwindIcon from '@iconify/icons-mdi/tailwind';
+import jestIcon from '@iconify/icons-simple-icons/jest';
+import svelteIcon from '@iconify/icons-simple-icons/svelte';
+import sassIcon from '@iconify/icons-mdi/sass';
+
+
 export const particlesParams = {
     particles: {
       number: {
@@ -113,4 +131,23 @@ export const particlesParams = {
       background_repeat: "no-repeat",
       background_size: "cover",
     },
+}
+
+export const TAGS = {
+  typescript: {name: '#Typescript', logo: languageTypescript, bgColor: '#0078CF'},
+  graphql: {name: '#GraphQL', logo: graphqlIcon, bgColor: '#E536AB'},
+  react: {name: '#React', logo: reactIcon, bgColor: '#00D8FE'},
+  postgres: {name: '#PostgreSQL', logo: postgresqlIcon, bgColor: '#346790'},
+  node: {name: '#Node', logo: nodejsIcon, bgColor: '#549E43'},
+  gatsby: {name: '#Gatsby', logo: gatsbyIcon, bgColor: '#744C9E'},
+  netlify: {name: '#Netlify', logo: netlifyIcon, bgColor: '#4CB6C2'},
+  nextjs: {name: '#Nextjs', logo: nextjsIcon, bgColor: '#A2A2A2'},
+  serverless: {name: '#Serverless', logo: serverlessIcon, bgColor: '#F26D61'},
+  styledComponents: {name: '#Styled', logo: styledComponentsIcon, bgColor: '#EFA6E9'},
+  hasura: {name: '#Hasura', logo: hasuraIcon, bgColor: '#99895d'},
+  pwa: {name: '#PWA', logo: logoPwa, bgColor: '#726c59'},
+  tailwind: {name: '#Tailwind', logo: tailwindIcon, bgColor: '#1ABEB8'},
+  jest: {name: '#Jest', logo: jestIcon, bgColor: '#99425B'},
+  svelte: {name: '#Svelte', logo: svelteIcon, bgColor: '#FF3F01'},
+  sass: {name: '#Sass', logo: sassIcon, bgColor: '#CE6799'},
 }
