@@ -21,8 +21,8 @@ class Menu extends React.Component {
       >
         <Link to="/"><h1>Home</h1></Link>
         <Link to="#about"><h1>About</h1></Link>
-        <Link to="#works"><h1>Works</h1></Link>
         <Link to="#service"><h1>Services</h1></Link>
+        <Link to="#works"><h1>Works</h1></Link>
         <Link to="#contact"><h1>Contact</h1></Link>
       </div>
     )

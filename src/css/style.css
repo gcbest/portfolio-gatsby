@@ -487,7 +487,8 @@ a.home-btn {
 .work {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
+  margin: 0 2rem;
 }
 
 .work-inner .mix {
