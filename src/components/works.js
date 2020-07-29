@@ -1,13 +1,22 @@
 import React from 'react'
 import Card from './card'
-import {ICONS} from '../utils'
+import {TAGS} from '../utils'
 
-const eatItIcons = [ICONS.typescript]
+const {typescript, graphql, react, postgres, node} = TAGS;
+const eatItTags = [typescript, graphql, react, postgres, node]
+const eatItProps = {image: 'https://hasura.io/blog/content/images/2019/05/Svelte_blog.png', title: 'Eat It!', description: 'Find new recipes and track your shopping list', tags: eatItTags}
 const Works = () => (
     <section id="works" className="work section-padding">
-      <Card tags={eatItIcons}/>
+      {/* Eat It */}
+      <Card {...eatItProps}/>
+
+      {/* Practical Psychology */}
       <Card/>
+      
+      {/* NBack */}
       <Card/>
+      
+      {/*  */}
         {/* <div classname="container">
           <div classname="row">
             <div classname="col-sm-12">

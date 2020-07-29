@@ -1,4 +1,8 @@
 import languageTypescript from '@iconify/icons-mdi/language-typescript';
+import graphqlIcon from '@iconify/icons-mdi/graphql';
+import reactIcon from '@iconify/icons-mdi/react';
+import postgresqlIcon from '@iconify/icons-simple-icons/postgresql';
+import nodejsIcon from '@iconify/icons-mdi/nodejs';
 
 
 export const particlesParams = {
@@ -118,6 +122,10 @@ export const particlesParams = {
     },
 }
 
-export const ICONS = {
-  typescript: {name: 'Typescript', logo: languageTypescript, bgColor: '#0078CF'}
+export const TAGS = {
+  typescript: {name: '#Typescript', logo: languageTypescript, bgColor: '#0078CF'},
+  graphql: {name: '#GraphQL', logo: graphqlIcon, bgColor: '#E536AB'},
+  react: {name: '#React', logo: reactIcon, bgColor: '#00D8FE'},
+  postgres: {name: '#PostgreSQL', logo: postgresqlIcon, bgColor: '#346790'},
+  node: {name: '#Node', logo: nodejsIcon, bgColor: '#549E43'},
 }
