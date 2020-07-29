@@ -2,21 +2,31 @@ import React from 'react'
 import Card from './card'
 import {TAGS} from '../utils'
 
-const {typescript, graphql, react, postgres, node} = TAGS;
-const eatItTags = [typescript, graphql, react, postgres, node]
-const eatItProps = {image: 'https://hasura.io/blog/content/images/2019/05/Svelte_blog.png', title: 'Eat It!', description: 'Find new recipes and track your shopping list', tags: eatItTags}
+const {typescript, graphql, react, postgres, node, gatsby, netlify, nextjs, serverless, styledComponents, hasura, pwa, tailwind, jest, svelte} = TAGS;
+const eatItTags = [typescript, graphql, react, postgres, node];
+const eatItProps = {image: 'https://hasura.io/blog/content/images/2019/05/Svelte_blog.png', title: 'Eat It!', description: 'Find new recipes and track your shopping list all in one place!', tags: eatItTags};
+
+const practicalPsychTags = [gatsby, react, netlify];
+const practicalPsychProps = {image: 'https://hasura.io/blog/content/images/2019/05/Svelte_blog.png', title: 'Practical Psychology Consultancy', description: 'Providing focused solutions to improve and enhance workers’ well-being, performance, and productivity', tags: practicalPsychTags};
+
+const nBackTags = [nextjs, serverless, styledComponents, hasura, pwa, tailwind, jest];
+const nBackProps = {image: 'https://hasura.io/blog/content/images/2019/05/Svelte_blog.png', title: 'N Back', description: 'Improve your working memory one game at a time', tags: nBackTags};
+
 const Works = () => (
     <section id="works" className="work section-padding">
       {/* Eat It */}
       <Card {...eatItProps}/>
 
       {/* Practical Psychology */}
-      <Card/>
+      <Card {...practicalPsychProps}/>
       
       {/* NBack */}
-      <Card/>
+      <Card {...nBackProps}/>
       
-      {/*  */}
+      {/* Coming Soon */}
+      {/* Read Comp Plus */}
+      {/* <Card/> */}
+
         {/* <div classname="container">
           <div classname="row">
             <div classname="col-sm-12">

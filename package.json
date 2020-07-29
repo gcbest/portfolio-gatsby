@@ -24,6 +24,8 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "@iconify/icons-ion": "^1.0.13",
+    "@iconify/icons-logos": "^1.0.12",
     "@iconify/icons-mdi": "^1.0.122",
     "@iconify/icons-simple-icons": "^1.0.43",
     "@iconify/react": "^1.1.3",
