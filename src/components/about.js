@@ -25,11 +25,6 @@ const About = () => (
                   <i className="fa fa-github" />
                 </a>
               </li>
-              <li>
-                <a href="https://www.youtube.com/watch?v=Ysa-E7W9_CQ">
-                  <i className="fa fa-youtube" />
-                </a>
-              </li>
             </ul>
           </div>
           {/* / END ABOUT IMAGE AREA  */}

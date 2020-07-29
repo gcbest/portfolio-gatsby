@@ -1433,6 +1433,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@iconify/icons-fa-solid@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-fa-solid/-/icons-fa-solid-1.0.12.tgz#803f683b2654ad18dc9be7b646e3d3b5f8db5f3c"
+  integrity sha512-s0p4QfTCu//azUSv1SyzIJ3sY2U415jX5a1nC1lEaYgDNwEJunm1DFYEdVQWKQvP+3Wd17SRqsER+RFYH20Acg==
+
 "@iconify/icons-ion@^1.0.13":
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/@iconify/icons-ion/-/icons-ion-1.0.13.tgz#f912ee32e50d03f438fde3965b72d78e2f79df5c"

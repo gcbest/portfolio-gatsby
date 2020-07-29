@@ -1,15 +1,9 @@
 import React from 'react';
-import { Icon } from '@iconify/react';
 import styled from 'styled-components';
-
-const verticalAlignment = 'vertical-align: middle;'
-
-const StyledIcon = styled(Icon)`
-    ${verticalAlignment}
-`;
+import StyledIcon from './styledIcon'
 
 const StyledText = styled.span`
-    ${verticalAlignment}
+    vertical-align: middle;
     display: inline-block;
     margin-left: 0.5rem;
 `
@@ -29,6 +23,13 @@ const StyledTag = styled(Tag)`
     width: fit-content;
     padding: 0.5rem 0.9rem;
     font-size: 1.3rem;
+    margin: 0.3rem 0.3rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
 `;
 
 export default StyledTag;

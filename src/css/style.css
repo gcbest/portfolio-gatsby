@@ -597,6 +597,10 @@ ul.work li.active {
 	Contact Form
 ===============================================*/
 
+.contact-me-area {
+  background-color: #f9f9f9;
+}
+
 .contact-form {
   position: relative;
   margin-top: 55px;

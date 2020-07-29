@@ -13,6 +13,7 @@ import logoPwa from '@iconify/icons-ion/logo-pwa';
 import tailwindIcon from '@iconify/icons-mdi/tailwind';
 import jestIcon from '@iconify/icons-simple-icons/jest';
 import svelteIcon from '@iconify/icons-simple-icons/svelte';
+import sassIcon from '@iconify/icons-mdi/sass';
 
 
 export const particlesParams = {
@@ -143,9 +144,10 @@ export const TAGS = {
   nextjs: {name: '#Nextjs', logo: nextjsIcon, bgColor: '#A2A2A2'},
   serverless: {name: '#Serverless', logo: serverlessIcon, bgColor: '#F26D61'},
   styledComponents: {name: '#Styled', logo: styledComponentsIcon, bgColor: '#EFA6E9'},
-  hasura: {name: '#Hasura', logo: hasuraIcon, bgColor: '#A2A2A2'},
-  pwa: {name: '#PWA', logo: logoPwa, bgColor: '#A2A2A2'},
+  hasura: {name: '#Hasura', logo: hasuraIcon, bgColor: '#99895d'},
+  pwa: {name: '#PWA', logo: logoPwa, bgColor: '#726c59'},
   tailwind: {name: '#Tailwind', logo: tailwindIcon, bgColor: '#1ABEB8'},
   jest: {name: '#Jest', logo: jestIcon, bgColor: '#99425B'},
   svelte: {name: '#Svelte', logo: svelteIcon, bgColor: '#FF3F01'},
+  sass: {name: '#Sass', logo: sassIcon, bgColor: '#CE6799'},
 }
