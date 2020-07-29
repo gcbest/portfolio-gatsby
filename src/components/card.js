@@ -13,9 +13,7 @@ function Card({ image, alt, description, tags=[] }) {
         <figure className="card">
             <img src='https://hasura.io/blog/content/images/2019/05/Svelte_blog.png' alt='Svelte FTW' />
             <figcaption>Eat It!</figcaption>
-            {/* tags.length > 0 && tags.map(t => t.name) */}
-            {tags.length > 0 && tags.map(({name, logo}) => <Tag name={name} logo={logo}  /> )}
-            <Tag />
+            {tags.length > 0 && tags.map(({name, logo, bgColor}) => <Tag name={name} logo={logo} bgColor={bgColor} /> )}
         </figure>
     )
 }

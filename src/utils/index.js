@@ -1,3 +1,6 @@
+import languageTypescript from '@iconify/icons-mdi/language-typescript';
+
+
 export const particlesParams = {
     particles: {
       number: {
@@ -113,4 +116,8 @@ export const particlesParams = {
       background_repeat: "no-repeat",
       background_size: "cover",
     },
+}
+
+export const ICONS = {
+  typescript: {name: 'Typescript', logo: languageTypescript, bgColor: '#0078CF'}
 }
