@@ -11,7 +11,7 @@ const practicalPsychTags = [gatsby, react, netlify];
 const practicalPsychProps = {image: `${googleDriveURL}1k1k_Lz7XZaTzC6PdzqAO1pNwz77f2TDx`, title: 'Practical Psychology Consultancy', links: {site: 'https://www.practicalpsychologyconsultancy.com/', github: 'https://github.com/gcbest/roxane2-gatsby'}, description: 'Providing focused solutions to improve and enhance workers’ well-being, performance, and productivity', tags: practicalPsychTags};
 
 const nBackTags = [nextjs, serverless, styledComponents, hasura, pwa, tailwind, jest];
-const nBackProps = {image: `${googleDriveURL}1UqKAjwwsj10LQiTg0oNYzAUALghjlkF3`, title: 'N-Back', links: {site: '#', github: 'https://github.com/gcbest/nback'}, description: 'Improve your working memory one game at a time', tags: nBackTags};
+const nBackProps = {image: `${googleDriveURL}1UqKAjwwsj10LQiTg0oNYzAUALghjlkF3`, title: 'N-Back', links: {site: '#', github: 'https://github.com/gcbest'}, description: 'Improve your working memory one game at a time', tags: nBackTags};
 
 // const readCompPlusTags = [svelte, sass];
 // const readCompPlusProps = {image: 'https://hasura.io/blog/content/images/2019/05/Svelte_blog.png', title: 'Read Comp Plus', links: {site: '#', github: 'https://github.com/gcbest/read-comp-plus'}, description: 'Improve your reading speed and comprehension', tags: readCompPlusTags}
