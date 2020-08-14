@@ -10,7 +10,7 @@ const eatItProps = {image: `${googleDriveURL}1_DKtImlNouGvOCdfBjCvh1M86hQUHru4`,
 const practicalPsychTags = [gatsby, react, netlify];
 const practicalPsychProps = {image: `${googleDriveURL}1k1k_Lz7XZaTzC6PdzqAO1pNwz77f2TDx`, title: 'Practical Psychology Consultancy', links: {site: 'https://www.practicalpsychologyconsultancy.com/', github: 'https://github.com/gcbest/roxane2-gatsby'}, description: 'Providing focused solutions to improve and enhance workers’ well-being, performance, and productivity', tags: practicalPsychTags};
 
-const nBackTags = [nextjs, serverless, styledComponents, hasura, pwa, tailwind, jest];
+const nBackTags = [nextjs, serverless, styledComponents, hasura, pwa, tailwind, jest, react];
 const nBackProps = {image: `${googleDriveURL}1UqKAjwwsj10LQiTg0oNYzAUALghjlkF3`, title: 'N-Back', links: {site: '#', github: 'https://github.com/gcbest'}, description: 'Improve your working memory one game at a time', tags: nBackTags};
 
 // const readCompPlusTags = [svelte, sass];
