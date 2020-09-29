@@ -486,7 +486,10 @@ a.home-btn {
 
 .work {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  /* grid-template-columns: repeat(2, minmax(320px, 1fr)); */
+  /* grid-template-columns: repeat(2, 1fr); */
   grid-gap: 2rem;
   margin: 0 2rem;
 }

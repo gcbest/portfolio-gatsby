@@ -13,11 +13,17 @@ const practicalPsychProps = {image: `${googleDriveURL}1k1k_Lz7XZaTzC6PdzqAO1pNwz
 const nBackTags = [nextjs, serverless, styledComponents, hasura, pwa, tailwind, jest, react];
 const nBackProps = {image: `${googleDriveURL}16WVSlcbJrOXShmVwq9G81agEOlCN8VVS`, title: 'N-Back', links: {site: 'https://nback.vercel.app/', github: 'https://github.com/gcbest/nback'}, description: 'Improve your working memory one game at a time', tags: nBackTags};
 
-const readCompPlusTags = [svelte, sass];
-const readCompPlusProps = {image: 'https://hasura.io/blog/content/images/2019/05/Svelte_blog.png', title: 'Read Comp Plus', links: {site: '#', github: 'https://github.com/gcbest/read-comp-plus'}, description: 'Improve your reading speed and comprehension', tags: readCompPlusTags}
+const readCompPlusTags = [svelte, typescript, tailwind, sass];
+const readCompPlusProps = {image: `${googleDriveURL}1WJKYiqAzyRpSHeAgzsDbZljKWljeMnFo`, title: 'Read Comp Plus', links: {site: 'https://read-comp-plus.vercel.app/', github: 'https://github.com/gcbest/read-comp-plus'}, description: 'Improve your reading speed and comprehension', tags: readCompPlusTags}
+
+const dailyJournalTags = [react, typescript] //aws tag needed
+const dailyJournalProps = {image: `${googleDriveURL}1UqKAjwwsj10LQiTg0oNYzAUALghjlkF3`, title: 'Daily Journal', links: {site: '#', github: 'https://github.com/gcbest/'}, description: 'Keep track of what matters to you', tags: dailyJournalTags}
 
 const Works = () => (
     <section id="works" className="work section-padding">
+      {/* Read Comp Plus */}
+      <Card {...readCompPlusProps}/>
+
       {/* Eat It */}
       <Card {...eatItProps}/>
 
@@ -28,8 +34,10 @@ const Works = () => (
       <Card {...nBackProps}/>
       
       {/* Coming Soon */}
-      {/* Read Comp Plus */}
-      {/* <Card {...readCompPlusProps}/> */}
+      {/* Journal */}
+      <Card {...dailyJournalProps}/>
+
+
     </section>
 )
 
