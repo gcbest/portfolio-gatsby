@@ -14,7 +14,12 @@ import tailwindIcon from '@iconify/icons-mdi/tailwind';
 import jestIcon from '@iconify/icons-simple-icons/jest';
 import svelteIcon from '@iconify/icons-simple-icons/svelte';
 import sassIcon from '@iconify/icons-mdi/sass';
+import awsCognito from '@iconify/icons-logos/aws-cognito';
+import awsApiGateway from '@iconify/icons-logos/aws-api-gateway';
+import awsDynamodb from '@iconify/icons-logos/aws-dynamodb';
+import awsLambda from '@iconify/icons-logos/aws-lambda';
 
+const AMAZON_HEX_CODE = '#FF9400';
 
 export const particlesParams = {
     particles: {
@@ -150,4 +155,8 @@ export const TAGS = {
   jest: {name: '#Jest', logo: jestIcon, bgColor: '#99425B'},
   svelte: {name: '#Svelte', logo: svelteIcon, bgColor: '#FF3F01'},
   sass: {name: '#Sass', logo: sassIcon, bgColor: '#CE6799'},
+  awsCognito: {name: '#AWS Cognito', logo: awsCognito, bgColor: AMAZON_HEX_CODE},
+  awsAPIGateway: {name: '#AWS API Gateway', logo: awsApiGateway, bgColor: AMAZON_HEX_CODE},
+  awsDynamoDB: {name: '#AWS DynamoDB', logo: awsDynamodb, bgColor: AMAZON_HEX_CODE},
+  awsLambda: {name: '#AWS Lambda', logo: awsLambda, bgColor: AMAZON_HEX_CODE}
 }

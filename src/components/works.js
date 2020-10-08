@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './card'
 import {TAGS} from '../utils'
 
-const {typescript, graphql, react, postgres, node, gatsby, netlify, nextjs, serverless, styledComponents, hasura, pwa, tailwind, jest, svelte, sass} = TAGS;
+const {typescript, graphql, react, postgres, node, gatsby, netlify, nextjs, serverless, styledComponents, hasura, pwa, tailwind, jest, svelte, sass, awsAPIGateway, awsDynamoDB, awsCognito, awsLambda} = TAGS;
 const googleDriveURL = 'https://drive.google.com/uc?export=view&id='
 const eatItTags = [typescript, graphql, react, postgres, node];
 const eatItProps = {image: `${googleDriveURL}1_DKtImlNouGvOCdfBjCvh1M86hQUHru4`, title: 'Eat It!', links: {site: 'https://eat--it.herokuapp.com/', github: 'https://github.com/gcbest/eat-it'}, description: 'Find new recipes and track your shopping list all in one place!', tags: eatItTags};
@@ -16,8 +16,8 @@ const nBackProps = {image: `${googleDriveURL}16WVSlcbJrOXShmVwq9G81agEOlCN8VVS`,
 const readCompPlusTags = [svelte, typescript, tailwind, sass];
 const readCompPlusProps = {image: `${googleDriveURL}1WJKYiqAzyRpSHeAgzsDbZljKWljeMnFo`, title: 'Read Comp Plus', links: {site: 'https://read-comp-plus.vercel.app/', github: 'https://github.com/gcbest/read-comp-plus'}, description: 'Improve your reading speed and comprehension', tags: readCompPlusTags}
 
-const dailyJournalTags = [react, typescript] //aws tag needed
-const dailyJournalProps = {image: `${googleDriveURL}1UqKAjwwsj10LQiTg0oNYzAUALghjlkF3`, title: 'Daily Journal', links: {site: '#', github: 'https://github.com/gcbest/'}, description: 'Keep track of what matters to you', tags: dailyJournalTags}
+const dailyJournalTags = [react, typescript, pwa, awsAPIGateway, awsCognito, awsDynamoDB, awsLambda] //aws tag needed
+const dailyJournalProps = {image: `${googleDriveURL}1UqKAjwwsj10LQiTg0oNYzAUALghjlkF3`, title: 'Daily Mastermind', links: {site: '#', github: 'https://github.com/gcbest/'}, description: 'Keep track of what matters to you', tags: dailyJournalTags}
 
 const Works = () => (
     <section id="works" className="work section-padding">
