@@ -8,12 +8,8 @@ const Services = () => (
       data-sal-duration="1000"
       data-sal-easing="easeInQuad"
     >
-      <div className="row">
-        <div className="col-md-12">
-          <div className="section-title">
-            <h2>What I Offer</h2>
-          </div>
-        </div>
+      <div className="section-title">
+        <h2>What I Offer</h2>
       </div>
       <div className="row">
         {/* START SINGLE SERVICE DESIGN AREA */}
