@@ -15,7 +15,7 @@ const nBackProps = { image: `https://i.imgur.com/5Tcualy.png`, title: 'N-Back', 
 const readCompPlusTags = [svelte, typescript, tailwind, sass];
 const readCompPlusProps = { image: `https://i.imgur.com/tvOMYMm.png`, title: 'Read Comp Plus', links: { site: 'https://read-comp-plus.vercel.app/', github: 'https://github.com/gcbest/read-comp-plus' }, description: 'Improve your reading speed and comprehension', tags: readCompPlusTags }
 
-const dailyJournalTags = [react, typescript, pwa, awsAPIGateway, awsCognito, awsDynamoDB, awsLambda] //aws tag needed
+const dailyJournalTags = [react, typescript, pwa, awsAPIGateway, awsCognito, awsDynamoDB, awsLambda];
 const dailyJournalProps = { image: `https://i.imgur.com/jAHuKjq.png`, title: 'Daily Mastermind', links: { site: '#', github: 'https://github.com/gcbest/' }, description: 'Keep track of what matters to you', tags: dailyJournalTags }
 
 const Works = () => (
