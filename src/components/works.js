@@ -25,10 +25,10 @@ const Works = () => (
     </div>
 
     <div className="work"
-      data-sal="fade"
-      // data-sal-delay="300"
-      data-sal-duration="500"
-      data-sal-easing="easeInQuad">
+      // data-sal="fade"
+      // data-sal-duration="500"
+      // data-sal-easing="easeInQuad"
+      >
       {/* Read Comp Plus */}
       <Card {...readCompPlusProps} />
 
