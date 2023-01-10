@@ -57,7 +57,7 @@ const Navmenu = () => {
                   Services
                 </Link>
               </li>
-              <li><Link className="smoth-scroll" to="#works">Works</Link></li> 
+              {/* <li><Link className="smoth-scroll" to="#works">Works</Link></li>  */}
               <li>
                 <Link className="smoth-scroll" to="#contact">
                   Contact

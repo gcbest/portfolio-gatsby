@@ -25,6 +25,11 @@ const About = () => (
                   <i className="fa fa-github" />
                 </a>
               </li>
+              <li>
+                <a href="https://www.youtube.com/@GetInRhythm/search?query=godfrey%20best">
+                  <i className="fa fa-youtube" />
+                </a>
+              </li>
             </ul>
           </div>
           {/* / END ABOUT IMAGE AREA  */}
@@ -42,7 +47,7 @@ const About = () => (
               data-sal-delay="300"
               data-sal-duration="500"
               data-sal-easing="easeInQuad">
-              As a life-long learner and highly motivated individual I spend
+              As a life-long learner, I spend
               much of my free time reading about and practicing web
               development.
               </p>
@@ -59,17 +64,14 @@ const About = () => (
               data-sal-easing="easeInQuad">
               I'm also deeply fascinated by how technology enables us to
               store and transmit vast amounts of information in fractions of a
-              second. I work daily to understand how this process works and to
-              gain the skills needed to add something meaningful to this
-              process.
+              second.  
               </p>
             <p data-sal="slide-up"
               data-sal-delay="1000"
               data-sal-duration="1000"
               data-sal-easing="easeInQuad">
-              I enjoy most activities which are competitive and repetitive,
-              which is what drew me to web development. The feeling of
-              iteratively improving at a certain task is something that
+              I enjoy most activities which are creative, competitive, and repetitive.
+              The feeling of iteratively improving at a certain task is something that
               motivates me in any challenge I undertake.
               </p>
           </div>

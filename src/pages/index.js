@@ -20,7 +20,7 @@ const IndexPage = () => {
         <Main/>
         <About />
         <Services />
-        <Works />
+        {/* <Works /> */}
         <Contact />
       </Layout>
     </div>
