@@ -1,0 +1,77 @@
+---
+const links = [
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#service", label: "Services" },
+  { href: "#contact", label: "Contact" },
+];
+---
+
+<div class="mainmenu">
+  <div class="navbar navbar-nobg">
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="navbar-toggle"
+        data-toggle="collapse"
+        data-target="navbar-collapse"
+        aria-label="Toggle navigation"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {links.map((link, index) => (
+          <li class:list={[index === 0 && "active"]}>
+            <a class="smoth-scroll" href={link.href}>
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div role="button" tabindex="0" class="fullscreen-menu" aria-label="Close menu">
+  <nav>
+    {links.map((link) => (
+      <a class="smoth-scroll" href={link.href}>
+        {link.label}
+      </a>
+    ))}
+  </nav>
+</div>
+
+<script>
+  (() => {
+    const headerTopArea = document.querySelector(".header-top-area");
+    const fullscreenMenu = document.querySelector(".fullscreen-menu");
+    const navToggle = document.querySelector(".navbar-toggle");
+
+    const updateMenuBg = () => {
+      if (!headerTopArea) return;
+      headerTopArea.classList.toggle("menu-bg", window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", updateMenuBg, { passive: true });
+    updateMenuBg();
+
+    navToggle?.addEventListener("click", () => {
+      fullscreenMenu?.classList.add("open");
+    });
+
+    fullscreenMenu?.addEventListener("click", (event: Event) => {
+      const target = event.target as Element | null;
+      if (target?.closest("a")) {
+        fullscreenMenu?.classList.remove("open");
+        return;
+      }
+      fullscreenMenu?.classList.remove("open");
+    });
+  })();
+</script>

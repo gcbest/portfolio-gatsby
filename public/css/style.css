@@ -659,3 +659,62 @@ textarea.form-control {
   color: #fff;
   text-align: center;
 }
+
+/*
+* ----------------------------------------------------------------------------------------
+* 11.FULLSCREEN NAVIGATION MENU
+* ----------------------------------------------------------------------------------------
+*/
+
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1031;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+.fullscreen-menu nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.fullscreen-menu a {
+  pointer-events: all;
+  color: #111;
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.fullscreen-menu a:hover {
+  color: #1273e7;
+}
+
+.fullscreen-menu.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.form-status {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.form-status:empty {
+  margin: 0;
+}
