@@ -1,27 +1,40 @@
+---
+import { Image } from "astro:assets";
+import me from "../assets/img/me.jpg";
+import Icon from "./Icon.astro";
+---
+
 <section id="about" class="about-area section-padding">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
         <div class="about-image wow fadeInUp" data-wow-delay="0.2s">
-          <img src="/images/bg/me.jpg" alt="Godfrey Best" />
+          <Image
+            src={me}
+            alt="Godfrey Best"
+            widths={[320, 480, 640]}
+            sizes="(max-width: 768px) 100vw, 360px"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
         <div class="social-links text-center wow fadeIn" data-wow-delay="0.4s">
           <ul>
             <li>
               <a href="https://www.linkedin.com/in/godfreybest">
-                <i class="fa fa-linkedin"></i>
+                <Icon name="linkedin" />
               </a>
             </li>
             <li>
               <a href="https://github.com/gcbest">
-                <i class="fa fa-github"></i>
+                <Icon name="github" />
               </a>
             </li>
             <li>
               <a
                 href="https://www.youtube.com/@GetInRhythm/search?query=godfrey%20best"
               >
-                <i class="fa fa-youtube"></i>
+                <Icon name="youtube" />
               </a>
             </li>
           </ul>

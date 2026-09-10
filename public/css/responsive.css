@@ -102,12 +102,6 @@ h6 {
     .single-service {
         margin-top: 40px;
     }
-    .quotes-content h3{
-        font-size: 22px;
-    }
-    .quotes-content p{
-        font-size: 14px;
-    }
     .testimonial-list {
         margin-top: 0px;
     }
@@ -117,7 +111,4 @@ h6 {
 /* Wide Mobile Layout: 480px. */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .quotes-content h3{
-        font-size: 26px;
-    }
 }
