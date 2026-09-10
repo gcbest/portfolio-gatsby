@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Main from "../components/Main.astro";
+import About from "../components/About.astro";
+import Services from "../components/Services.astro";
+import Contact from "../components/Contact.astro";
+
+const keywords = [
+  "godfrey",
+  "best",
+  "software",
+  "engineer",
+  "react",
+  "nextjs",
+  "gatsby",
+  "typescript",
+  "javascript",
+  "astro",
+  "web development",
+];
+
+const description =
+  "Godfrey Best is a software engineer building modern web tools";
+---
+
+<BaseLayout title="Godfrey Best" description={description} keywords={keywords}>
+  <Main />
+  <About />
+  <Services />
+  <Contact />
+</BaseLayout>
