@@ -41,6 +41,16 @@ body {
   height: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -274,6 +284,14 @@ a.home-btn {
   background: transparent;
   padding: 10px 25px;
   border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.error-page .home-btn {
+  color: #2f3744;
+  border-color: #2f3744;
+}
+.error-page .home-btn:hover {
+  background: #2f3744;
+  color: #fff;
 }
 .header-top-area {
   position: fixed;
@@ -628,6 +646,7 @@ textarea.form-control {
 .footer-area {
   background: #2f3744;
   padding: 60px 0px;
+  flex-shrink: 0;
 }
 
 .footer-area p {
