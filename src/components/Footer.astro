@@ -1,11 +1,42 @@
 ---
+import Icon from "./Icon.astro";
+
 const year = new Date().getFullYear();
+
+const socials = [
+  {
+    href: "https://www.linkedin.com/in/godfreybest",
+    name: "linkedin",
+    label: "LinkedIn",
+  },
+  {
+    href: "https://github.com/gcbest",
+    name: "github",
+    label: "GitHub",
+  },
+  {
+    href: "https://www.youtube.com/@GetInRhythm/search?query=godfrey%20best",
+    name: "youtube",
+    label: "YouTube",
+  },
+] as const;
 ---
 
 <footer class="footer-area">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        <div class="social-links text-center">
+          <ul>
+            {socials.map((social) => (
+              <li>
+                <a href={social.href} aria-label={social.label}>
+                  <Icon name={social.name} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
         <p data-aos="fade-up" data-aos-delay="1000">
           &copy; {year} Godfrey Best
         </p>
@@ -13,3 +44,20 @@ const year = new Date().getFullYear();
     </div>
   </div>
 </footer>
+
+<style>
+  .footer-area .social-links {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-area .social-links ul li a {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .footer-area .social-links ul li a:hover {
+    color: #c9ced6;
+    border-color: #c9ced6;
+  }
+</style>
