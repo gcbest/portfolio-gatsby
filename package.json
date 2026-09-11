@@ -6,6 +6,9 @@
   "author": "Godfrey Best",
   "description": "Personal portfolio",
   "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
